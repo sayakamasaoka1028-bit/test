@@ -12,16 +12,18 @@
 - `テトリス_ミニマル_フル.c`  
   7種類のピース、ライン消去、スコア計算など本格的なロジックを実装。
 
+## ゲームの遊び方
+
+- 左右矢印キーでブロック移動
+- 上矢印キーで回転
+- 下矢印キーで高速落下
+- 一列揃えるとライン消去
+- ゲームオーバーはブロックが積み上がり画面上部に到達
+
 ## 必要環境
 
 - C言語コンパイラ（gcc）
-- SDL2 開発ライブラリ（Ubuntu 例: `sudo apt install libsdl2-dev libsdl2-mixer-dev`）
-
-## 実行方法（例: Ubuntu）
-
-```bash
-# コンパイル
-gcc テトリス_sdl.c -o tetris_sdl `sdl2-config --cflags --libs`
-
-# 実行
-./tetris_sdl
+- SDL2 開発ライブラリ  
+  Ubuntu の例: 
+  ```bash
+  sudo apt install libsdl2-dev libsdl2-mixer-dev
